@@ -68,6 +68,11 @@
 | git stash apply `<<index>>` | Applying the stash from 0 or 1 index |
 | git stash drop `<<index>>` | After applying, we need to drop that stash index |
 | git stash clear | Clears all the stash |
+| git restore --staged `<<filename>> <<fileanme2>>` | Unstage the file(s)  |
+| git log --pretty=format:"%Cgreen%an%Creset committed %h on %cd" | Formatting log output. %C - placeholder %an-authorname %h-commitId %cd-committedDate  |
+| git config --global alias.lg "log --pretty=format:'%an committed %h'" | setting up Alias  |
+| git config --global alias.unstage "restore --staged ." | setting up Alias  |
+
 
 
 
